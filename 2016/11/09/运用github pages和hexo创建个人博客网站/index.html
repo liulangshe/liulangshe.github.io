@@ -1,0 +1,675 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="本文章为零基础读者适用。
+
+##本文内容包含：
+###[持续更新] 1.什么是github 2.什么是hexo 3.环境部署 4.安装hexo 5.注册github 6.两者关联 7.
+
+###1.什么是github pages
+####先了解什么是 GitHub？
+确切的说 GitHub 是一家公司，位于旧金山，由 Chris Wanstrath, PJ Hyett 与 Tom Preston">
+<meta property="og:type" content="article">
+<meta property="og:title" content="运用github pages和hexo创建个人博客网站">
+<meta property="og:url" content="http://yoursite.com/2016/11/09/运用github pages和hexo创建个人博客网站/index.html">
+<meta property="og:site_name" content="流浪社">
+<meta property="og:description" content="本文章为零基础读者适用。
+
+##本文内容包含：
+###[持续更新] 1.什么是github 2.什么是hexo 3.环境部署 4.安装hexo 5.注册github 6.两者关联 7.
+
+###1.什么是github pages
+####先了解什么是 GitHub？
+确切的说 GitHub 是一家公司，位于旧金山，由 Chris Wanstrath, PJ Hyett 与 Tom Preston">
+<meta property="og:image" content="http://static.zybuluo.com/patrick1214/zvj7au3kzz7p575z5ryloj03/1.jpg">
+<meta property="og:image" content="http://static.zybuluo.com/patrick1214/b684qxgnr0df0pp9b0mw6fsr/2.png">
+<meta property="og:image" content="http://static.zybuluo.com/patrick1214/h0cg5efsf7y0uwutxfuqun7a/3.png">
+<meta property="og:image" content="http://static.zybuluo.com/patrick1214/egegciuclt790ljnglaoqbd9/4.png">
+<meta property="og:image" content="http://static.zybuluo.com/patrick1214/yrffux1dt4vus8yufrb1y6kq/5.png">
+<meta property="og:updated_time" content="2016-11-08T18:44:39.865Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="运用github pages和hexo创建个人博客网站">
+<meta name="twitter:description" content="本文章为零基础读者适用。
+
+##本文内容包含：
+###[持续更新] 1.什么是github 2.什么是hexo 3.环境部署 4.安装hexo 5.注册github 6.两者关联 7.
+
+###1.什么是github pages
+####先了解什么是 GitHub？
+确切的说 GitHub 是一家公司，位于旧金山，由 Chris Wanstrath, PJ Hyett 与 Tom Preston">
+<meta name="twitter:image" content="http://static.zybuluo.com/patrick1214/zvj7au3kzz7p575z5ryloj03/1.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/11/09/运用github pages和hexo创建个人博客网站/"/>
+
+
+  <title> 运用github pages和hexo创建个人博客网站 | 流浪社 </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">流浪社</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+            所有
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+            是我
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                运用github pages和hexo创建个人博客网站
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-09T02:44:27+08:00" content="2016-11-09">
+              2016-11-09
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>本文章为零基础读者适用。</p>
+</blockquote>
+<p>##本文内容包含：</p>
+<p>###[持续更新]<br> <strong>1.什么是github<br> 2.什么是hexo<br> 3.环境部署<br> 4.安装hexo<br> 5.注册github<br> 6.两者关联</strong><br> 7.</p>
+<hr>
+<p>###1.什么是github pages</p>
+<p>####先了解什么是 GitHub？</p>
+<p>确切的说 GitHub 是一家公司，位于旧金山，由 Chris Wanstrath, PJ Hyett 与 Tom Preston-Werner 三位开发者在2008年4月创办。地址：How people build software · GitHub ，主要提供基于git的版本托管服务。一经上线，它的发展速度惊为天人，截止目前，GitHub 已经发展成全球最大的开（同）源（性）社区。</p>
+<p>GitHub Pages本用于介绍托管在GitHub的项目， 不过，由于他的空间免费稳定，用来做搭建一个博客再好不过了。</p>
+<blockquote>
+<p>github Pages可以被认为是用户编写的、托管在github上的静态网页。</p>
+</blockquote>
+<p>####为什么选择GitHub Pages？</p>
+<p>很多人用wordpress，为什么要用github pages来搭建？</p>
+<ul>
+<li>github pages有300M免费空间，资料自己管理，保存可靠；</li>
+<li>学着用github，享受github的便利，上面有很多大牛，眼界会开阔很多；</li>
+<li>顺便看看github工作原理，最好的团队协作流程；</li>
+<li>帮助文档详细而友好；</li>
+<li>github是趋势；</li>
+<li>吉祥物太萌-0-（喵）<br><img src="http://static.zybuluo.com/patrick1214/zvj7au3kzz7p575z5ryloj03/1.jpg" alt="1.jpg-63.9kB"></li>
+</ul>
+<hr>
+<p>###2.什么是hexo</p>
+<blockquote>
+<p>快速、简单且功能强大的 Node.js 博客框架。A fast, simple &amp; powerful blog framework, powered by Node.js.–Hexo作者 @tommy351</p>
+</blockquote>
+<p>Hexo 是一个简单地、轻量地、基于Node的一个静态博客框架，可以方便的生成静态网页托管在github.<br><img src="http://static.zybuluo.com/patrick1214/b684qxgnr0df0pp9b0mw6fsr/2.png" alt="2.png-23.7kB"></p>
+<hr>
+<p>###3.环境部署</p>
+<ol>
+<li><a href="https://nodejs.org/en/" target="_blank" rel="external"><strong>Node</strong></a> 点击进入官网下载，一路确认即可。</li>
+<li><a href="https://git-scm.com/download/win" target="_blank" rel="external"><strong>Git</strong></a> 点击进入下载页面，根据自己的系统下载，安装过程中出现选项一般选择第一个或者默认。</li>
+</ol>
+<hr>
+<p>###4.安装hexo<br>可以事先参阅 <a href="https://hexo.io/docs/" target="_blank" rel="external"><strong>官方文档</strong></a><br>如果你的Git安装成功的话鼠标右键桌面会出现<code>git bash here</code>，打开。<br>在某个盘（D盘为例）内新建hexo文件夹</p>
+<pre><code>cd d:/hexo
+</code></pre><p> 下载安装hexo</p>
+<pre><code>npm install -g hexo-cli
+</code></pre><p>初始化hexo</p>
+<pre><code>hexo init blog
+</code></pre><p>并且：</p>
+<pre><code>cd blog
+npm install
+</code></pre><p>以上基本完成了hexo的安装。<br>这里有必要提下Hexo常用的几个命令：</p>
+<ul>
+<li>hexo new “postName” #新建文章</li>
+<li>hexo new page “pageName” #新建页面</li>
+<li>hexo generate #生成静态页面至public目录</li>
+<li>hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）</li>
+<li>hexo deploy #将.deploy目录部署到GitHub</li>
+<li>hexo deploy #将.deploy目录部署到GitHub</li>
+<li>hexo help  # 查看帮助</li>
+<li>hexo version  #查看Hexo的版本<br><img src="http://static.zybuluo.com/patrick1214/h0cg5efsf7y0uwutxfuqun7a/3.png" alt="3.png-10.2kB"></li>
+</ul>
+<p>命令的简写为：</p>
+<p>hexo g == hexo generate<br>hexo s == hexo server<br>hexo d == hexo deploy</p>
+<hr>
+<p>###5.注册github</p>
+<ul>
+<li>打开官网 <a href="https://github.com/" target="_blank" rel="external"><strong>github</strong></a></li>
+<li>选择<code>Sign Up</code>注册账号<img src="http://static.zybuluo.com/patrick1214/egegciuclt790ljnglaoqbd9/4.png" alt="4.png-45.3kB"></li>
+<li>[建议：名字取成熟的，邮箱不要qq的，密码用不会忘记的]</li>
+<li>step2选择个人免费账号，下面这个不用勾选，然后一路完成吧！</li>
+<li>其他的就不再重复造轮子了，想了解github更多内容可以参阅<a href="http://stormzhang.com/github/2016/06/19/learn-github-from-zero-summary/" target="_blank" rel="external"><strong>stormzhang</strong></a>的博客。<br>####噢，别忘了<code>New repository</code>，项目名为：你的用户名.github.io<br>注意：必须为这个名字，这以后就是访问你博客的域名了，就像本站的域名：<a href="https://liulangshe.github.io/" target="_blank" rel="external">https://liulangshe.github.io/</a></li>
+</ul>
+<hr>
+<p>###6.两者关联</p>
+<p>####配置文件<br>在D盘hexo文件夹中有<code>_config.yml</code>文件，用Notepad++打开（憋说你没有：<a href="http://rj.baidu.com/soft/detail/13478.html?ald" target="_blank" rel="external"><strong>Notepad++</strong></a>）<br>在末尾按照格式添加</p>
+<pre><code>deploy:
+type: git
+repo: https://github.com/你的用户名/你的用户名.github.io.git 
+branch: master
+
+#本来就有deploy，你要做的就是按照你的用户名填写补充完整保存即可。
+</code></pre><p>####配置SSH</p>
+<ul>
+<li>打开Git Bash终端：在桌面右键，会出现”Git Bash here”的选项，点击即可。</li>
+<li>设置user name和email:</li>
+</ul>
+<pre><code>git config --global user.name &quot;你的GitHub用户名&quot;
+git config --global user.email &quot;你的GitHub注册邮箱&quot;
+</code></pre><ul>
+<li>生成ssh密钥：</li>
+</ul>
+<pre><code>    ssh-keygen -t rsa -C &quot;你的GitHub注册邮箱&quot;
+一般情况下是不需要密码的，所以，接下来直接回车就好。
+</code></pre><ul>
+<li>复制公钥：<br>建议下载一个实用软件：<a href="http://www.voidtools.com/" target="_blank" rel="external"><strong>Everything</strong></a><br>使用该软件直接搜索id_rsa.pub<br>注：id_rsa文件是私钥，要妥善保管，id_rsa.pub是公钥文件。<br>同样的，用Notepad++打开。</li>
+<li>添加公钥到github：<br><img src="http://static.zybuluo.com/patrick1214/yrffux1dt4vus8yufrb1y6kq/5.png" alt="5.png-10kB"><br>在Settings内点击SSH and GPG keys选项，然后点击New SSH key(新建SSH)按钮；<br>将id_rsa.pub中的内容复制到Key文本框中，然后点击Add SSH key(添加SSH)按钮；<br>Title随意。</li>
+<li>测试SSH：</li>
+</ul>
+<pre><code>ssh -T git@github.com
+</code></pre><p>若返回：</p>
+<pre><code>The authenticity of host &apos;github.com (207.97.227.239)&apos; can&apos;t be established. 
+RSA key fingerprint is 17:24:ac:a5:76:28:24:36:62:1b:36:4d:eb:df:a6:45.
+Are you sure you want to continue connecting (yes/no)?
+</code></pre><p>输入yes后回车。<br>然后显示如下信息则OK(其中的liulangshe是用户名)。</p>
+<pre><code>Hi liulangshe! You&apos;ve successfully authenticated, 
+but GitHub does not provide shell access.
+</code></pre><p>基本完成以上几个步骤 在hexo文件夹下Git bash</p>
+<pre><code>hexo clean
+hexo generate
+hexo deploy
+</code></pre><p>即可访问<code>https://你的用户名.github.io/</code><br>本次更新至此2016.11.9 3：40</p>
+<hr>
+<p>###</p>
+<p>###</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/11/09/Hello World/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Patrick" />
+          <p class="site-author-name" itemprop="name">Patrick</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Patrick</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
