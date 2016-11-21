@@ -370,119 +370,12 @@
 
       
         
-          
-            <a id="more"></a>
-<blockquote>
-<p>本文章为零基础读者适用。</p>
-</blockquote>
-<p>##本文内容包含：</p>
-<p>###[持续更新]<br> <strong>1.什么是github<br> 2.什么是hexo<br> 3.环境部署<br> 4.安装hexo<br> 5.注册github<br> 6.两者关联</strong><br> 7.</p>
-<hr>
-<p>###1.什么是github pages</p>
-<p>####先了解什么是 GitHub？</p>
-<p>确切的说 GitHub 是一家公司，位于旧金山，由 Chris Wanstrath, PJ Hyett 与 Tom Preston-Werner 三位开发者在2008年4月创办。地址：How people build software · GitHub ，主要提供基于git的版本托管服务。一经上线，它的发展速度惊为天人，截止目前，GitHub 已经发展成全球最大的开（同）源（性）社区。</p>
-<p>GitHub Pages本用于介绍托管在GitHub的项目， 不过，由于他的空间免费稳定，用来做搭建一个博客再好不过了。</p>
-<blockquote>
-<p>github Pages可以被认为是用户编写的、托管在github上的静态网页。</p>
-</blockquote>
-<p>####为什么选择GitHub Pages？</p>
-<p>很多人用wordpress，为什么要用github pages来搭建？</p>
-<ul>
-<li>github pages有300M免费空间，资料自己管理，保存可靠；</li>
-<li>学着用github，享受github的便利，上面有很多大牛，眼界会开阔很多；</li>
-<li>顺便看看github工作原理，最好的团队协作流程；</li>
-<li>帮助文档详细而友好；</li>
-<li>github是趋势；</li>
-<li>吉祥物太萌-0-（喵）<br><img src="http://static.zybuluo.com/patrick1214/zvj7au3kzz7p575z5ryloj03/1.jpg" alt="1.jpg-63.9kB"></li>
-</ul>
-<hr>
-<p>###2.什么是hexo</p>
-<blockquote>
-<p>快速、简单且功能强大的 Node.js 博客框架。A fast, simple &amp; powerful blog framework, powered by Node.js.–Hexo作者 @tommy351</p>
-</blockquote>
-<p>Hexo 是一个简单地、轻量地、基于Node的一个静态博客框架，可以方便的生成静态网页托管在github.<br><img src="http://static.zybuluo.com/patrick1214/b684qxgnr0df0pp9b0mw6fsr/2.png" alt="2.png-23.7kB"></p>
-<hr>
-<p>###3.环境部署</p>
-<ol>
-<li><a href="https://nodejs.org/en/" target="_blank" rel="external"><strong>Node</strong></a> 点击进入官网下载，一路确认即可。</li>
-<li><a href="https://git-scm.com/download/win" target="_blank" rel="external"><strong>Git</strong></a> 点击进入下载页面，根据自己的系统下载，安装过程中出现选项一般选择第一个或者默认。</li>
-</ol>
-<hr>
-<p>###4.安装hexo<br>可以事先参阅 <a href="https://hexo.io/docs/" target="_blank" rel="external"><strong>官方文档</strong></a><br>如果你的Git安装成功的话鼠标右键桌面会出现<code>git bash here</code>，打开。<br>在某个盘（D盘为例）内新建hexo文件夹</p>
-<pre><code>cd d:/hexo
-</code></pre><p> 下载安装hexo</p>
-<pre><code>npm install -g hexo-cli
-</code></pre><p>初始化hexo</p>
-<pre><code>hexo init blog
-</code></pre><p>并且：</p>
-<pre><code>cd blog
-npm install
-</code></pre><p>以上基本完成了hexo的安装。<br>这里有必要提下Hexo常用的几个命令：</p>
-<ul>
-<li>hexo new “postName” #新建文章</li>
-<li>hexo new page “pageName” #新建页面</li>
-<li>hexo generate #生成静态页面至public目录</li>
-<li>hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）</li>
-<li>hexo deploy #将.deploy目录部署到GitHub</li>
-<li>hexo deploy #将.deploy目录部署到GitHub</li>
-<li>hexo help  # 查看帮助</li>
-<li>hexo version  #查看Hexo的版本<br><img src="http://static.zybuluo.com/patrick1214/h0cg5efsf7y0uwutxfuqun7a/3.png" alt="3.png-10.2kB"></li>
-</ul>
-<p>命令的简写为：</p>
-<p>hexo g == hexo generate<br>hexo s == hexo server<br>hexo d == hexo deploy</p>
-<hr>
-<p>###5.注册github</p>
-<ul>
-<li>打开官网 <a href="https://github.com/" target="_blank" rel="external"><strong>github</strong></a></li>
-<li>选择<code>Sign Up</code>注册账号<img src="http://static.zybuluo.com/patrick1214/egegciuclt790ljnglaoqbd9/4.png" alt="4.png-45.3kB"></li>
-<li>[建议：名字取成熟的，邮箱不要qq的，密码用不会忘记的]</li>
-<li>step2选择个人免费账号，下面这个不用勾选，然后一路完成吧！</li>
-<li>其他的就不再重复造轮子了，想了解github更多内容可以参阅<a href="http://stormzhang.com/github/2016/06/19/learn-github-from-zero-summary/" target="_blank" rel="external"><strong>stormzhang</strong></a>的博客。<br>####噢，别忘了<code>New repository</code>，项目名为：你的用户名.github.io<br>注意：必须为这个名字，这以后就是访问你博客的域名了，就像本站的域名：<a href="https://liulangshe.github.io/" target="_blank" rel="external">https://liulangshe.github.io/</a></li>
-</ul>
-<hr>
-<p>###6.两者关联</p>
-<p>####配置文件<br>在D盘hexo文件夹中有<code>_config.yml</code>文件，用Notepad++打开（憋说你没有：<a href="http://rj.baidu.com/soft/detail/13478.html?ald" target="_blank" rel="external"><strong>Notepad++</strong></a>）<br>在末尾按照格式添加</p>
-<pre><code>deploy:
-type: git
-repo: https://github.com/你的用户名/你的用户名.github.io.git 
-branch: master
-
-#本来就有deploy，你要做的就是按照你的用户名填写补充完整保存即可。
-</code></pre><p>####配置SSH</p>
-<ul>
-<li>打开Git Bash终端：在桌面右键，会出现”Git Bash here”的选项，点击即可。</li>
-<li>设置user name和email:</li>
-</ul>
-<pre><code>git config --global user.name &quot;你的GitHub用户名&quot;
-git config --global user.email &quot;你的GitHub注册邮箱&quot;
-</code></pre><ul>
-<li>生成ssh密钥：</li>
-</ul>
-<pre><code>    ssh-keygen -t rsa -C &quot;你的GitHub注册邮箱&quot;
-一般情况下是不需要密码的，所以，接下来直接回车就好。
-</code></pre><ul>
-<li>复制公钥：<br>建议下载一个实用软件：<a href="http://www.voidtools.com/" target="_blank" rel="external"><strong>Everything</strong></a><br>使用该软件直接搜索id_rsa.pub<br>注：id_rsa文件是私钥，要妥善保管，id_rsa.pub是公钥文件。<br>同样的，用Notepad++打开。</li>
-<li>添加公钥到github：<br><img src="http://static.zybuluo.com/patrick1214/yrffux1dt4vus8yufrb1y6kq/5.png" alt="5.png-10kB"><br>在Settings内点击SSH and GPG keys选项，然后点击New SSH key(新建SSH)按钮；<br>将id_rsa.pub中的内容复制到Key文本框中，然后点击Add SSH key(添加SSH)按钮；<br>Title随意。</li>
-<li>测试SSH：</li>
-</ul>
-<pre><code>ssh -T git@github.com
-</code></pre><p>若返回：</p>
-<pre><code>The authenticity of host &apos;github.com (207.97.227.239)&apos; can&apos;t be established. 
-RSA key fingerprint is 17:24:ac:a5:76:28:24:36:62:1b:36:4d:eb:df:a6:45.
-Are you sure you want to continue connecting (yes/no)?
-</code></pre><p>输入yes后回车。<br>然后显示如下信息则OK(其中的liulangshe是用户名)。</p>
-<pre><code>Hi liulangshe! You&apos;ve successfully authenticated, 
-but GitHub does not provide shell access.
-</code></pre><p>基本完成以上几个步骤 在hexo文件夹下Git bash</p>
-<pre><code>hexo clean
-hexo generate
-hexo deploy
-</code></pre><p>即可访问<code>https://你的用户名.github.io/</code><br>本次更新至此2016.11.9 3：40</p>
-<hr>
-<p>###</p>
-<p>###</p>
-
-          
+          description
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/11/09/运用github pages和hexo创建个人博客网站/">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
