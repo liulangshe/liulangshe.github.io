@@ -250,7 +250,7 @@
               
                 
                 <a class="post-title-link" href="/2016/11/25/openvpn免流/" itemprop="url">
-                  未命名
+                  openvpn免流
                 </a>
               
             
@@ -269,171 +269,6 @@
           </span>
 
           
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="openvpn免流"><a href="#openvpn免流" class="headerlink" title="openvpn免流"></a>openvpn免流</h1><hr>
-<blockquote>
-<p>patrick：<br>随着免流行业迅速膨胀，漏洞的封堵也被运营商重视，流浪社决定在十二月一日开始免费提供vpn服务，但是同行攻击和线路失效不能避免，还请各位朋友多多理解。同时也感觉朋友们的支持。<br>任何问题请在qq（1063834271）上与我交流，文末常见问题解答为必读。<br>以上。</p>
-</blockquote>
-<h2 id="第一步，了解免流"><a href="#第一步，了解免流" class="headerlink" title="第一步，了解免流"></a>第一步，了解免流</h2><ul>
-<li>原理：<ul>
-<li>通过连接vpn转发实现数据伪装，把你的收费流量改走官方免流量费用的通道。</li>
-</ul>
-</li>
-<li>基本流程：<ul>
-<li>安装openvpn软件</li>
-<li>更改wap接入点 </li>
-<li>获取vpn账号</li>
-<li>测试免流</li>
-</ul>
-</li>
-<li>优点：<ul>
-<li>如果测试成功，则是全局免流</li>
-<li>网速在1-2MB之间，满足日常使用</li>
-<li>安全并且稳定，简单链接后即可免流量</li>
-</ul>
-</li>
-<li>缺点：<ul>
-<li>使用vpn连接会耗费比平常更多的电量</li>
-<li>存在因为操作问题或者个人手机问题造成的不免流情况</li>
-<li>受远程服务器的影响，若服务器遭受攻击，则vpn服务会被迫停止</li>
-<li>运营商封堵漏洞也会导致线路失效</li>
-</ul>
-</li>
-<li>特别声明：<ul>
-<li>流浪社提供的vpn服务为免费服务，但是因为本vpn造成的个人损失概不负责</li>
-<li><strong>由个人保留最终解释权</strong>。</li>
-</ul>
-</li>
-</ul>
-<h2 id="第二步，安装openvpn软件"><a href="#第二步，安装openvpn软件" class="headerlink" title="第二步，安装openvpn软件"></a>第二步，安装openvpn软件</h2><ul>
-<li><a href="http://www.liulangshe.com/ios.html" target="_blank" rel="external"><strong>苹果安装op教程</strong></a>（最新线路在群文件）</li>
-<li><a href="https://www.pgyer.com/patrick" target="_blank" rel="external"><strong>安卓安装op软件</strong></a>（卸载旧版本软件再下载）</li>
-</ul>
-<h2 id="第三步，更改wap接入点"><a href="#第三步，更改wap接入点" class="headerlink" title="第三步，更改wap接入点"></a>第三步，更改wap接入点</h2><p>苹果：</p>
-<ol>
-<li>用safari打开 <a href="https://www.unlockit.co.nz/fw/" target="_blank" rel="external"><strong>点击此处</strong></a> 选择创建apn。</li>
-<li>Carrier选择CMCC（cmwap）并点击 create apn。</li>
-<li>跳出描述文件后安装即可。</li>
-</ol>
-<p>安卓：</p>
-<ol>
-<li>打开系统网络设置。</li>
-<li>找到apn接入点，创建一个新的apn接入点。</li>
-<li>名称：随意；apn：cmwap 其他为空后保存并勾选。</li>
-</ol>
-<h2 id="第四步，获取vpn账号"><a href="#第四步，获取vpn账号" class="headerlink" title="第四步，获取vpn账号"></a>第四步，获取vpn账号</h2><p> <strong>请申请加入流浪社qq群：<a href="http://qm.qq.com/cgi-bin/qm/qr?k=OZTMJfr1EuTLDAC1Nebrkx4HYaXUBBfS" target="_blank" rel="external">298721741</a> ，免费账号列表在群文件。<br> 所有的账号都是无限流量一个月时限，到期可继续免费获取。</strong></p>
-<h2 id="第五步，测试免流"><a href="#第五步，测试免流" class="headerlink" title="第五步，测试免流"></a>第五步，测试免流</h2><ol>
-<li>断开wifi，打开4g并连接vpn，确认目前现有流量。</li>
-<li>消耗一部分流量（50mb左右），op内会有显示的。</li>
-<li>再次查询流量若无消耗或者扣小于1mb则说明免流成功。</li>
-</ol>
-<hr>
-<h2 id="常见问题解答"><a href="#常见问题解答" class="headerlink" title="常见问题解答"></a>常见问题解答</h2><p>苹果：</p>
-<ol>
-<li>改apn如果不会可以参考这个教程： <strong><a href="http://www.shhuu.com/thread-302022-1-1.html" target="_blank" rel="external">改apn图文教程</a></strong></li>
-<li>连接后在openvpn的显示栏内有 <code>Bytes in：</code>一直显示为4.xx KB说明数据被服务器防火墙拦截，断开重连多次直到<code>Bytes in</code>突破5KB则说明真正可用。</li>
-</ol>
-<p>安卓：</p>
-<ol>
-<li>连接显示各种错误连接不上按照以下步骤解决：删除目前的vpn软件-开关飞行模式-设置apn接入点-重新安装vpn软件重连</li>
-<li>vpn软件经常自动断开或者消失是后台被杀导致的，请参阅群文件后台保护进程。</li>
-<li>新建apn如果不会请自己解决。</li>
-</ol>
-<hr>
-<pre><code>本次免费与线路更新实属不易，也许你打算支持我一下。
-</code></pre><p> <img src="http://static.zybuluo.com/patrick1214/alby61f3ynyavhuuhczzp6n6/wechat.png" alt="此处输入图片的描述"></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/11/09/Hello World/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-09T02:46:31+08:00" content="2016-11-09">
-              2016-11-09
-            </time>
-          </span>
-
-          
             <span class="post-category" >
               &nbsp; | &nbsp;
               <span class="post-meta-item-icon">
@@ -442,8 +277,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/第一篇/" itemprop="url" rel="index">
-                    <span itemprop="name">第一篇</span>
+                  <a href="/categories/openvpn/" itemprop="url" rel="index">
+                    <span itemprop="name">openvpn</span>
                   </a>
                 </span>
 
@@ -478,7 +313,7 @@
         
           welcome.
           <div class="post-more-link text-center">
-            <a class="btn" href="/2016/11/09/Hello World/">
+            <a class="btn" href="/2016/11/25/openvpn免流/">
               阅读全文 &raquo;
             </a>
           </div>
@@ -549,7 +384,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">1</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
